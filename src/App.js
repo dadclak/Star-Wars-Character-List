@@ -15,8 +15,8 @@ function App() {
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/favorites'} exact component={Favorites} />
-          <Route path={'/:id'} exact component={CharacterDescription} />
-          <Route component={NotFoundPage} />
+          <Route path={'/character/:id'} exact component={CharacterDescription} />
+          <Route path={'*'} component={NotFoundPage} />
         </Switch>
       </Container>
     </BrowserRouter>

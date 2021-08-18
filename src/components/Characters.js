@@ -68,7 +68,7 @@ function Characters({favorites, addFavorite, removeFavorite, searchCharacter}) {
                 <Card.Body>
                   <Row>
                     <Col xs={11}>
-                      <LinkContainer to={`/${id}`}>
+                      <LinkContainer to={`/character/${id}`}>
                         <Button variant="light" size="lg">
                           {character.name}
                         </Button>

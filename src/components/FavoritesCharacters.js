@@ -16,7 +16,7 @@ function FavoritesCharacters({favorites, addFavorite, removeFavorite, searchChar
 
   return (
     <div>
-        {favorites.length 
+        {favorites.length
             ? (favorites
               .filter(char => char.name.includes(searchCharacter))
               .map((character, idx) => {
@@ -27,7 +27,7 @@ function FavoritesCharacters({favorites, addFavorite, removeFavorite, searchChar
                     <Card.Body>
                         <Row>
                         <Col xs={11}>
-                            <LinkContainer to={`/${id}`}>
+                            <LinkContainer to={`/character/${id}`}>
                             <Button variant="light" size="lg">
                                 {name}
                             </Button>

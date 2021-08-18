@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {InputGroup, FormControl, Col, Button} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { mapDispatchToProps, mapStateToProps } from '../redux/mapToProps';
 
-function SearchCharacters({searchCharacter, setSearchCharacter}) {
+function SearchCharacters({setSearchCharacter}) {
     const [valueCharacter, setValueCharacter] = useState('')
-
-    useEffect(() => {
-
-    }, [valueCharacter])
 
     const getSearch = (name = valueCharacter) => {
         setValueCharacter(name)
-        setSearchCharacter(name)
+        setSearchCharacter(name.toUpperCase())
     }
 
     return (

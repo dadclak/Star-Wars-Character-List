@@ -1,4 +1,4 @@
-import { addToFavorites, removeFromFavorites, searchCharacter } from '../actions';
+import { addToFavorites, removeFromFavorites, searchCharacter } from './actions';
 
 export const mapStateToProps = (state) => {
   return {
